@@ -1,0 +1,11 @@
+Neos:
+  Flow:
+    http:
+      chain:
+        process:
+          chain:
+            'Ttree.ResourceShortener:Shortener':
+              position: 'before routing'
+              component: Ttree\ResourceShortener\ShortenerComponent
+              componentOptions:
+                sites: []
